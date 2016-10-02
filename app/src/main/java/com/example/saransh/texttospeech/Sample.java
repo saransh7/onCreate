@@ -43,7 +43,7 @@ public class Sample extends ActionBarActivity implements TextToSpeech.OnInitList
                 dir.mkdirs();
                 // Get the text file
 
-                File file = new File(dir,"COM_200_Assignment_7.txt");
+                File file = new File(dir,"sample.txt");
 
                 // ob.pathh
                 // Read text from file

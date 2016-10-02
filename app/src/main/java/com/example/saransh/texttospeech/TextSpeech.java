@@ -28,6 +28,7 @@ import static com.example.saransh.texttospeech.R.id.button1;
 
 public class TextSpeech extends AppCompatActivity implements TextToSpeech.OnInitListener {
     private static final int FILE_SELECT_CODE = 0;
+    private static final int SUCCESS = 0;
     private TextToSpeech tts;
     private Button button;
     private Button button1;
@@ -112,16 +113,16 @@ public class TextSpeech extends AppCompatActivity implements TextToSpeech.OnInit
         if (status == TextToSpeech.SUCCESS) {
 
             int result = tts.setLanguage(Locale.US);
+                if (result == TextToSpeech.LANG_MISSING_DATA
+                        || result == TextToSpeech.LANG_NOT_SUPPORTED) {
+                    Log.e("TTS", "Unknown Language");
+                } else {
+                    button.setEnabled(true);
+                    speakOut();
+                }
 
-            if (result == TextToSpeech.LANG_MISSING_DATA
-                    || result == TextToSpeech.LANG_NOT_SUPPORTED) {
-                Log.e("TTS", "Unknown Language");
-            } else {
-                button.setEnabled(true);
-                speakOut();
-            }
 
-        } else {
+            }else {
             Log.e("TTS", "Failed!");
         }
 
