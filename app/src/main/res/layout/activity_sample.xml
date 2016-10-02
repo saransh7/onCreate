@@ -18,44 +18,23 @@
         android:textSize="35dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:layout_below="@+id/textview"
-        android:layout_marginTop="46dp"
-        android:hint="Enter Text"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textColor="@color/md_blue_grey_600"
-        android:textColorHint="@color/md_black_1000" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Speak the Text"
-        android:id="@+id/button"
-        android:layout_below="@+id/editText"
-        android:layout_centerHorizontal="true" />
 
     <Button
         android:text="Sample"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="66dp"
         android:id="@+id/button1"
-        android:layout_below="@+id/button"
+        android:layout_below="@+id/textview"
         android:layout_centerHorizontal="true" />
 
-    <Button
-        android:text="Browse"
+    <TextView
+        android:text="Please make sure you have your file in Downloads folder with the name sample.txt. This was done due to an unexpected error which occured at the last moment. Sorry for the inconvenience"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/button1"
-        android:layout_alignRight="@+id/button1"
-        android:layout_alignEnd="@+id/button1"
-        android:layout_marginTop="18dp"
-        android:id="@+id/button2" />
+        android:layout_marginTop="26dp"
+        android:id="@+id/textView" />
+
 </RelativeLayout>
