@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                Intent i1 = new Intent(MainActivity.this, TextToSpeech.class);
+                Intent i1 = new Intent(MainActivity.this, TextSpeech.class);
                 startActivity(i1);
 
             }
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                Intent i2 = new Intent(MainActivity.this, SpeechToText.class);
+                Intent i2 = new Intent(MainActivity.this, SpeechText.class);
                 startActivity(i2);
 
             }
