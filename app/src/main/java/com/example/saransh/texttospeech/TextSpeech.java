@@ -60,6 +60,8 @@ public class TextSpeech extends AppCompatActivity implements TextToSpeech.OnInit
             public void onClick(View arg0) {
                 Intent t = new Intent(TextSpeech.this, Sample.class);
                 startActivity(t);
+                overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+
             }
 
         });
